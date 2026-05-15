@@ -32,7 +32,8 @@ steps:
         GH_TOKEN=$$GITHUB_PAT uv run pytest tests/cicd/test_e2e_deployment.py -v
     secretEnv: ['GITHUB_PAT', 'GITHUB_APP_INSTALLATION_ID']
     
-availableSecrets:
+availableSecrets:    git pull origin
+    gclient sync
   secretManager:
   - versionName: projects/$PROJECT_ID/secrets/github-pat/versions/latest
     env: 'GITHUB_PAT'

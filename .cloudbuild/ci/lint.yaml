@@ -36,4 +36,5 @@ steps:
 
 logsBucket: gs://${PROJECT_ID}-logs-data/build-logs
 options:
-  defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
+  defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET    git pull origin
+    gclient sync
